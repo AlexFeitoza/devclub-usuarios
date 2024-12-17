@@ -1,11 +1,15 @@
-import More from "./teste"
+import { Title, Container } from "./styles"
 
 function App() {
-  
+
 
   return (
     <>
-      <More />
+      <Container> 
+      <Title>  
+        Hello World
+      </Title>
+      </Container>
     </>
   )
 }
