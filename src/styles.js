@@ -1,13 +1,23 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    background-color: green;
-    display: flex;
-    height: 100px;
-    justify-content: center;
+    
 `
+export const TopBackground = styled.div`
 
+`
+export const Form = styled.form`
+
+`
+export const ContainerInputs = styled.div`
+
+`
+export const Input = styled.input`
+
+`
+export const Button = styled.button`
+
+`
 export const Title = styled.h1`
-    color: purple; 
-    border-radius: 10px;
+    
 `

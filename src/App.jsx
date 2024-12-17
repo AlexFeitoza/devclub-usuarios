@@ -1,17 +1,31 @@
-import { Title, Container } from "./styles"
+import { Title, Container, TopBackground, Form, ContainerInputs, Input, Button } from "./styles"
 
-function App() {
+function Home() {
 
 
   return (
     <>
       <Container> 
-      <Title>  
-        Hello World
-      </Title>
+
+        <TopBackground>
+          <img src="" alt="" />
+        </TopBackground>
+
+        <Form>
+          <Title>Cadastrar Usuários</Title>
+
+          <ContainerImputs>
+            <div>
+              <Input type="text" placeholder=""/>
+              <Input />
+            </div>
+            <Input />
+          </ContainerImputs>
+          <Button>Cadastrar Usuário</Button>
+        </Form>
       </Container>
     </>
   )
 }
 
-export default App
+export default Home
