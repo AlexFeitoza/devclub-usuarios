@@ -1,6 +1,6 @@
 import { Container, Title, TopBackground, Form, ContainerInputs, Input, InputLabel, Button } from "./styles"
 
-import UsersImage from './assets/users.png'
+import UsersImage from '../../assets/users.png'
 
 function Home() {
 
