@@ -1,4 +1,5 @@
 import { useRef } from "react"
+import api from "../../services/api"
 
 import { Container, Title, TopBackground, Form, ContainerInputs, Input, InputLabel, Button } from "./styles"
 
@@ -11,8 +12,14 @@ function Home() {
   const inputAge = useRef()
   const inputEmail = useRef()
 
-  function registerNewUser() {
-    console.log(inputName.current.value, inputAge.current.value, inputEmail.current.value)
+  async function registerNewUser(){
+   const data = await api.post('/usuarios', {
+    email: inputEmail.current.value, 
+    age: parseInt(nuinputAge.current.value),
+    name: inputName.current.value
+   })
+
+   console.log(data)
   }
 
   return (
