@@ -1,9 +1,11 @@
 import { useRef } from "react"
 import api from "../../services/api"
 
+
 import { Container, Title, TopBackground, Form, ContainerInputs, Input, InputLabel, Button } from "./styles"
 
 import UsersImage from '../../assets/users.png'
+import DefautButton from "../../components/Button"
 
 
 function Home() {
@@ -63,7 +65,10 @@ function Home() {
 
           <Button type='button' onClick={registerNewUser}>Cadastrar Usuário</Button>
         </Form>
+
+        <DefautButton />
       </Container>
+      
     </>
   )
 }
