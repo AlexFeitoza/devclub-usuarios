@@ -1,5 +1,5 @@
 import Button from "../../components/Button"
-import { TopBackground } from "../../components/TopBackground"
+import TopBackground from "../../components/TopBackground"
 
 function ListUsers(){
 
