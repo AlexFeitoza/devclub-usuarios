@@ -1,12 +1,12 @@
-import { Button } from "../../pages/Home/styles"
+import { Button } from "./styles"
 
 
-function DefautButton(){
-
+function DefautButton({children, ...props}){
+// ... = spread operator no javascript
     return(
-        <div>
-            <Button>Lista de Usuários</Button>
-        </div>
+        
+            <Button {...props}>{children}</Button>
+        
     )
 }
 
