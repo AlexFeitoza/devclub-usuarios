@@ -25,6 +25,14 @@ function ListUsers() {
         getUsers();
     }, []);
 
+    async function deleteUser(id){
+        await api.delete(`/usuarios/${id}`)
+
+        const usersDeleted = users.filter(user => user.id !== id)
+
+        setUsers(usersDeleted)
+    }
+
     const navigate = useNavigate();
 
     return (
@@ -42,7 +50,7 @@ function ListUsers() {
                             <p>{user.email}</p>
                             
                         </div>
-                        <TrashIcon src={Trash} alt="lixeira" />
+                        <TrashIcon src={Trash} alt="lixeira" onClick={() => deleteUser(user.id)}/>
                     </CardUsers>
                 ))}
             </ContainerUsers>
