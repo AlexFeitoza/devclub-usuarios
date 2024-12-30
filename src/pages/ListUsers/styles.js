@@ -72,3 +72,70 @@ export const AvatarProfile = styled.img`
     width: 70px;
 
 `
+export const EditUserContainer = styled.div`
+  background-color: #252d48;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+
+  h2 {
+    margin-bottom: 16px;
+    color: #fff;
+    text-align: center;
+  }
+`;
+
+export const BackgroundEdit = styled.div `
+    background-color: #181f36;
+`
+
+export const EditForm = styled.form`
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+
+  input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+  }
+`;
+
+export const EditButton = styled.button`
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &.primary {
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+
+  &.primary:hover {
+    background-color: #0056b3;
+  }
+
+  &.secondary {
+    background-color: #f5f5f5;
+    color: #333;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s ease;
+  }
+
+  &.secondary:hover {
+    background-color: #e4e4e4;
+  }
+`
+
