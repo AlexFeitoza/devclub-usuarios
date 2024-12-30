@@ -25,7 +25,7 @@ export const ContainerUsers = styled.div`
     gap: 10px;
     margin: 40px 0;
 
-    @media (max-width: 750px){
+    @media (max-width: 810px){
         grid-template-columns: 1fr;
     }
 `
@@ -38,7 +38,7 @@ export const CardUsers = styled.div`
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    max-width: 380px;
+    max-width: 400px;
 
     h3 {
         color: #fff;
@@ -57,7 +57,7 @@ export const CardUsers = styled.div`
 
 export const TrashIcon = styled.img`
     cursor: pointer;
-    padding-left: 30px;
+    padding-left: 0px;
 
     &:hover {
         opacity: 0.5;
@@ -89,6 +89,7 @@ export const EditUserContainer = styled.div`
 
 export const BackgroundEdit = styled.div `
     background-color: #181f36;
+    
 `
 
 export const EditForm = styled.form`
@@ -111,31 +112,20 @@ export const EditForm = styled.form`
 `;
 
 export const EditButton = styled.button`
+  color: #181f36;
   padding: 10px 20px;
   font-size: 14px;
+  font-weight: bolder;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 
-  &.primary {
-    background-color: #007bff;
-    color: white;
-    transition: background-color 0.3s ease;
+  
+  &:hover {
+    background-color: #4caf50;
+    color: #fff;
+    transition: 0.5s;
   }
 
-  &.primary:hover {
-    background-color: #0056b3;
-  }
-
-  &.secondary {
-    background-color: #f5f5f5;
-    color: #333;
-    border: 1px solid #ccc;
-    transition: background-color 0.3s ease;
-  }
-
-  &.secondary:hover {
-    background-color: #e4e4e4;
-  }
 `
 
