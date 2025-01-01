@@ -28,6 +28,11 @@ export const ContainerUsers = styled.div`
     @media (max-width: 810px){
         grid-template-columns: 1fr;
     }
+
+    @media (max-width: 430px){
+       
+       margin: auto;
+    }
 `
 
 export const CardUsers = styled.div`
@@ -75,10 +80,11 @@ export const AvatarProfile = styled.img`
 export const EditUserContainer = styled.div`
   background-color: #252d48;
   padding: 20px;
-  margin: 20px auto;
+  margin-bottom: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 500px;
+  width: 400px;
+  
 
   h2 {
     margin-bottom: 16px;
@@ -89,7 +95,9 @@ export const EditUserContainer = styled.div`
 
 export const BackgroundEdit = styled.div `
     background-color: #181f36;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 `
 
 export const EditForm = styled.form`
