@@ -20,7 +20,7 @@ import {
     TrashIcon,
 }
     from "./styles";
-import { Background } from "../../components/TopBackground/styles";
+
 
 
 function ListUsers() {
